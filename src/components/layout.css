@@ -31,6 +31,11 @@ html {
   font-size: 18px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 64px;
@@ -93,7 +98,11 @@ mark {
 }
 
 .social-media svg {
+  cursor: pointer;
   margin-right: 12px;
+}
+.social-media svg:hover {
+  fill: black;
 }
 
 /*-------- NAV --------*/
