@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
       <div>
         <main class="normalWidth">{children}</main>
       </div>
+      <footer class="normalWidth">Made with 💖 by Jordan Liu</footer>
     </>
   )
 }

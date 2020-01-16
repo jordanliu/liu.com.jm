@@ -105,6 +105,18 @@ mark {
   fill: black;
 }
 
+/*-------- BUTTON --------*/
+.projects-button {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 50px;
+  width: 200px;
+  color: white;
+  background-color: black;
+}
+
 /*-------- NAV --------*/
 .nav {
   margin-top: 50px;
@@ -196,4 +208,14 @@ mark {
 
 .card:hover {
   opacity: 1;
+}
+
+/* ----- ABOUT ------ */
+.about-wrapper {
+  margin-top: 5em;
+}
+
+footer {
+  text-align: center;
+  padding: 100px 0px 25px;
 }
