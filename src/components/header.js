@@ -7,8 +7,12 @@ const Header = ({ siteTitle }) => (
   <header className="normalWidth">
     <div className="nav aos-init aos-animate">
       <div className="shortcuts">
-        <Link className="link">PROJECTS</Link>
-        <Link className="link">CONTACT</Link>
+        <Link to="/#projects" className="link">
+          PROJECTS
+        </Link>
+        <Link to="/#contact" className="link">
+          CONTACT
+        </Link>
       </div>
     </div>
   </header>

@@ -6,20 +6,20 @@ const project = () => {
     <div className="projects-wrapper">
       <h4>Projects</h4>
       <div>
-        <div class="work-container">
-          <div class="work">
-            <div class="card"></div>
+        <div className="work-container">
+          <div className="work">
+            <div className="card"></div>
           </div>
-          <div class="work">
-            <div class="card"></div>
+          <div className="work">
+            <div className="card"></div>
           </div>
         </div>
-        <div class="work-container">
-          <div class="work">
-            <div class="card"></div>
+        <div className="work-container">
+          <div className="work">
+            <div className="card"></div>
           </div>
-          <div class="work">
-            <div class="card"></div>
+          <div className="work">
+            <div className="card"></div>
           </div>
         </div>
       </div>

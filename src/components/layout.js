@@ -27,9 +27,15 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
-        <main class="normalWidth">{children}</main>
+        <main className="normalWidth">{children}</main>
       </div>
-      <footer class="normalWidth">Made with 💖 by Jordan Liu</footer>
+      <footer className="normalWidth">
+        Made with{" "}
+        <span role="img" aria-label="heart">
+          💖
+        </span>{" "}
+        by Jordan Liu
+      </footer>
     </>
   )
 }
