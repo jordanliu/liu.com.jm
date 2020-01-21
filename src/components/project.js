@@ -3,13 +3,21 @@ import "./layout.css"
 
 const project = () => {
   return (
-    <div className="projects-wrapper">
-      <h4>Projects</h4>
-      <div class="cards">
-        <div class="card">ONE</div>
-        <div class="card">TWO</div>
-        <div class="card">THREE</div>
-        <div class="card">FOUR</div>
+    <div data-sal="fade">
+      <h4 data-sal="fade">Projects</h4>
+      <div class="cards" data-sal="fade">
+        <div class="card" data-sal="fade">
+          ONE
+        </div>
+        <div class="card" data-sal="fade">
+          TWO
+        </div>
+        <div class="card" data-sal="fade">
+          THREE
+        </div>
+        <div class="card" data-sal="fade">
+          FOUR
+        </div>
       </div>
 
       <div style={{ textAlign: "center" }}>
