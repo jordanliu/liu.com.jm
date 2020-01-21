@@ -5,23 +5,11 @@ const project = () => {
   return (
     <div className="projects-wrapper">
       <h4>Projects</h4>
-      <div>
-        <div className="work-container">
-          <div className="work">
-            <div className="card"></div>
-          </div>
-          <div className="work">
-            <div className="card"></div>
-          </div>
-        </div>
-        <div className="work-container">
-          <div className="work">
-            <div className="card"></div>
-          </div>
-          <div className="work">
-            <div className="card"></div>
-          </div>
-        </div>
+      <div class="cards">
+        <div class="card">ONE</div>
+        <div class="card">TWO</div>
+        <div class="card">THREE</div>
+        <div class="card">FOUR</div>
       </div>
 
       <div style={{ textAlign: "center" }}>

@@ -185,11 +185,22 @@ mark {
 }
 
 /*-------- CARD --------*/
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
 .card {
-  text-align: center;
+  background-color: dodgerblue;
   color: white;
-  height: 280px;
-  border-radius: 15px;
+  padding: 1rem;
+  height: 4rem;
   object-fit: cover;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   transition: 0.3s ease-in-out;
