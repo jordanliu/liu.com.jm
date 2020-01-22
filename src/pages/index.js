@@ -13,10 +13,12 @@ export const query = graphql`
       allProjects {
         edges {
           node {
-            project_title
             _meta {
               uid
             }
+            project_title
+            project_description
+            project_preview_thumbnail
           }
         }
       }
