@@ -1,17 +1,19 @@
 import React from "react"
 import "./layout.css"
 import { graphql } from "gatsby"
-
+import { RichText } from "prismic-reactjs"
+//    {console.log(JSON.stringify(projects, null, 4))}
 const project = ({ projects }) => {
+  if (!projects) return null
   return (
-    <div className="cards">
-      {projects.map((project, i) => (
-        <div className="card" key={i}>
-          text should be here:
-          {project.node.project_title.text}
-        </div>
-      ))}
-      {console.log(JSON.stringify(projects, null, 4))}
+    <div class="cards">
+      {projects.map(project => {
+        return (
+          <div class="card" key={project.node._meta.uid}>
+            {RichText.asText(project.node.project_title)}
+          </div>
+        )
+      })}
     </div>
   )
 }
@@ -24,8 +26,6 @@ export const query = graphql`
         edges {
           node {
             project_title
-            project_description
-            project_preview_thumbnail
             _meta {
               uid
             }
