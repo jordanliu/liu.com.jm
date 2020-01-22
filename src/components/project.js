@@ -1,30 +1,37 @@
 import React from "react"
 import "./layout.css"
+import { graphql } from "gatsby"
 
-const project = () => {
+const project = ({ projects }) => {
   return (
-    <div data-sal="fade">
-      <h4 data-sal="fade">Projects</h4>
-      <div class="cards" data-sal="fade">
-        <div class="card" data-sal="fade">
-          ONE
+    <div className="cards">
+      {projects.map((project, i) => (
+        <div className="card" key={i}>
+          text should be here:
+          {project.node.project_title.text}
         </div>
-        <div class="card" data-sal="fade">
-          TWO
-        </div>
-        <div class="card" data-sal="fade">
-          THREE
-        </div>
-        <div class="card" data-sal="fade">
-          FOUR
-        </div>
-      </div>
-
-      <div style={{ textAlign: "center" }}>
-        <button className="projects-button">View more projects</button>
-      </div>
+      ))}
+      {console.log(JSON.stringify(projects, null, 4))}
     </div>
   )
 }
-
 export default project
+
+export const query = graphql`
+  {
+    prismic {
+      allProjects {
+        edges {
+          node {
+            project_title
+            project_description
+            project_preview_thumbnail
+            _meta {
+              uid
+            }
+          }
+        }
+      }
+    }
+  }
+`

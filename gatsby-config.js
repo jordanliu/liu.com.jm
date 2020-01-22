@@ -5,6 +5,14 @@ module.exports = {
     author: `@jordanliu`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-source-prismic-graphql",
+      options: {
+        repositoryName: "jordanxliu", // (REQUIRED, replace with your own)
+      },
+    },
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
@@ -25,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `projects`,
+        path: `${__dirname}/src/projects`,
       },
     },
     `gatsby-transformer-sharp`,
