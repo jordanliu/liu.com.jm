@@ -81,6 +81,11 @@ mark {
   color: black;
 }
 
+@media (max-width: 900px) {
+  .shortcuts {
+    display: none;
+  }
+}
 .normalWidth {
   width: 90%;
   margin: auto;
@@ -217,6 +222,11 @@ mark {
 
 .card:hover {
   opacity: 1;
+}
+
+.projects-title {
+  margin-top: 30px;
+  margin-bottom: -15px;
 }
 
 /* ----- ABOUT ------ */
