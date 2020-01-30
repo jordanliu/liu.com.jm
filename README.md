@@ -6,9 +6,10 @@
 <h1 align="center">
   jordanxliu.com
 </h1>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b80efce8-4895-4ef2-8593-82f5059d1429/deploy-status)](https://app.netlify.com/sites/cranky-pike-dcb1fd/deploys)
-Personal portfolio made with Gatsby.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b80efce8-4895-4ef2-8593-82f5059d1429/deploy-status)](https://app.netlify.com/sites/cranky-pike-dcb1fd/deploys)
+
+Personal portfolio built with Gatsby.
 
 ## 🚀 Quick start
 
