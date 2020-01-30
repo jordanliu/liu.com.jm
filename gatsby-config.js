@@ -6,6 +6,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLETRACKING,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-source-prismic-graphql",
