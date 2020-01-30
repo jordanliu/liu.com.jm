@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jordan Liu`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Portfolio website for Jordan Liu - Full Stack Developer`,
     author: `@jordanliu`,
   },
   plugins: [
