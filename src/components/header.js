@@ -7,9 +7,6 @@ const Header = ({ siteTitle }) => (
   <header className="normalWidth">
     <div className="nav aos-init aos-animate">
       <div className="shortcuts">
-        <Link to="/#projects" className="link">
-          PROJECTS
-        </Link>
         <Link to="/#contact" className="link">
           CONTACT
         </Link>

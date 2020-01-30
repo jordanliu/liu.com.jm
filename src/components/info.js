@@ -4,12 +4,7 @@ import { Twitter, Linkedin, GitHub } from "react-feather"
 
 const info = () => {
   return (
-    <div
-      data-sal="slide-up"
-      data-sal-delay="300"
-      data-sal-duration="800"
-      data-sal-easing="ease-out-bounce"
-    >
+    <div>
       <h1>Jordan Liu</h1>
       <h4>Full Stack Developer</h4>
       <div className="social-media">
