@@ -1,5 +1,5 @@
 import React from "react"
-import "./layout.css"
+import "./card.css"
 import { RichText } from "prismic-reactjs"
 //import { graphql } from "gatsby"
 //    {console.log(JSON.stringify(projects, null, 4))}
