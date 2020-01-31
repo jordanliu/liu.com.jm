@@ -5,13 +5,14 @@ module.exports = {
     author: `@jordanliu`,
   },
   plugins: [
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-61789534-2",
+        head: true,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-source-prismic-graphql",
