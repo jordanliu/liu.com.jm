@@ -11,9 +11,11 @@ const project = ({ projects }) => {
         {projects.map(project => {
           return (
             <div className="card" key={project.node._meta.uid}>
-              {RichText.asText(project.node.project_title)}
-              <hr></hr>
-              {RichText.asText(project.node.project_description)}
+              <div className="info">
+                <h3> {RichText.asText(project.node.project_title)}</h3>
+                <p>{RichText.asText(project.node.project_description)}</p>
+              </div>
+              <div className="image"></div>
             </div>
           )
         })}

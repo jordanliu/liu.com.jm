@@ -4,6 +4,22 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.cards h3 {
+  color: white;
+}
+
+.image {
+  width: 40%;
+  float: right;
+  height: 100%;
+  background-color: yellow;
+  fill: red;
+}
+
+.info {
+  width: 50%;
+  float: left;
+}
 .cards {
   max-width: 1000px;
   margin: 25px auto;
@@ -12,6 +28,7 @@
 }
 
 .card {
+  overflow: hidden;
   margin-bottom: 3em;
   background-color: dodgerblue;
   color: white;
