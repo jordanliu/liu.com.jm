@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Info from "../components/info"
 import Project from "../components/project"
 import About from "../components/about"
 import { graphql } from "gatsby"
@@ -32,7 +31,6 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Info />
       <Project home={doc.node} projects={projects} />
       <About />
     </Layout>

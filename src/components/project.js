@@ -1,8 +1,7 @@
 import React from "react"
 import "./card.css"
 import { RichText } from "prismic-reactjs"
-//import { graphql } from "gatsby"
-//    {console.log(JSON.stringify(projects, null, 4))}
+
 const project = ({ projects }) => {
   if (!projects) return null
   return (
@@ -13,6 +12,7 @@ const project = ({ projects }) => {
           return (
             <div className="card" key={project.node._meta.uid}>
               {RichText.asText(project.node.project_title)}
+              <hr></hr>
               {RichText.asText(project.node.project_description)}
             </div>
           )

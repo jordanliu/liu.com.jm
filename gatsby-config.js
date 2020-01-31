@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jordan Liu`,
-    description: `Portfolio website for Jordan Liu - Full Stack Developer`,
+    description: `Portfolio website for Jordan Liu - Full Stack Developer based in Kingston, Jamaica`,
     author: `@jordanliu`,
   },
   plugins: [
