@@ -1,3 +1,4 @@
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `Jordan Liu`,
@@ -10,6 +11,7 @@ module.exports = {
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
         head: true,
+        anonymize: true,
       },
     },
     `gatsby-transformer-remark`,
