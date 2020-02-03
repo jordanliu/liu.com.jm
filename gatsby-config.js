@@ -1,19 +1,12 @@
-require("dotenv").config()
-module.exports = {
+const cfg = {
   siteMetadata: {
     title: `Jordan Liu`,
     description: `Portfolio website for Jordan Liu - Full Stack Developer based in Kingston, Jamaica`,
     author: `@jordanliu`,
+    twitter: `https://twitter.com/jordanxliu`,
+    repository: `https://github.com/jordanliu/jordanxliu.com`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
-        head: true,
-        anonymize: true,
-      },
-    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
@@ -65,3 +58,15 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+if (process.env.CONTEXT === `production`) {
+  cfg.plugins.push({
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+      head: true,
+    },
+  })
+}
+
+module.exports = cfg
