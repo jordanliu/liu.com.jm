@@ -30,7 +30,7 @@ export default ({ data }) => {
   if (!doc || !projects) return null
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO />
       <Project home={doc.node} projects={projects} />
       <About />
     </Layout>
