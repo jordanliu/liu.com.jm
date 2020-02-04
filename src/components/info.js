@@ -4,7 +4,7 @@ import { Twitter, Linkedin, GitHub } from "react-feather"
 
 const info = () => {
   return (
-    <div>
+    <div className="header-info">
       <h1>Jordan Liu</h1>
       <h4>Full Stack Developer</h4>
       <div className="social-media">

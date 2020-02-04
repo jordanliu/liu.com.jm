@@ -1,0 +1,60 @@
+/*-------- CARD --------*/
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cards h3 {
+  color: white;
+}
+
+.image {
+  width: 40%;
+  float: right;
+  height: 100%;
+  background-color: yellow;
+  fill: red;
+}
+
+.info {
+  width: 50%;
+  float: left;
+}
+.cards {
+  max-width: 1000px;
+  margin: 25px auto;
+  display: block;
+  grid-gap: 2rem;
+}
+
+.card {
+  overflow: hidden;
+  margin-bottom: 3em;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 15rem;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+}
+
+.card img {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 280px;
+}
+
+.card:hover {
+  transform: translateY(-9px) scale(1.005) translateZ(0);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.projects-title {
+  margin-top: 3em;
+  margin-bottom: -15px;
+}
