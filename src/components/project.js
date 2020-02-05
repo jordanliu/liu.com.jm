@@ -1,6 +1,7 @@
 import React from "react"
 import "./card.css"
 import { RichText } from "prismic-reactjs"
+import { ArrowUpRight } from "react-feather"
 
 const project = ({ projects }) => {
   if (!projects) return null
@@ -25,6 +26,30 @@ const project = ({ projects }) => {
                 <p className="text">
                   {RichText.asText(project.node.project_description)}
                 </p>
+                <div className="links">
+                  <div className="github">
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Github"
+                    >
+                      Github
+                      <ArrowUpRight className="error" />
+                    </a>
+                  </div>
+                  <div className="view-live">
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View Live"
+                    >
+                      View Live
+                      <ArrowUpRight className="error" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           )
