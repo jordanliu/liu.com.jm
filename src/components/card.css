@@ -102,7 +102,20 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
+  .card {
+    max-width: 34rem;
+    padding: 1rem;
+  }
+
+  .image {
+    min-width: 15rem;
+    max-width: 15rem;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  /* mobile */
   .card {
     flex-direction: column;
     max-width: 17rem;
@@ -116,5 +129,13 @@ img {
   }
   .projects-title {
     margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* mobile */
+  .card {
+    flex-direction: column;
+    max-width: 14.5rem;
   }
 }
