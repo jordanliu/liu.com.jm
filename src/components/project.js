@@ -27,7 +27,7 @@ const project = ({ projects }) => {
                   {RichText.asText(project.node.project_description)}
                 </p>
                 <div className="links">
-                  <div className="github">
+                  <div className="github nav-anim">
                     <a
                       href="https://github.com"
                       target="_blank"
@@ -38,7 +38,7 @@ const project = ({ projects }) => {
                       <ArrowUpRight className="error" />
                     </a>
                   </div>
-                  <div className="view-live">
+                  <div className="view-live nav-anim">
                     <a
                       href="https://github.com"
                       target="_blank"

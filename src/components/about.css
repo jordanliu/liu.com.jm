@@ -1,0 +1,9 @@
+.lets-talk {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.underline {
+  border-bottom: 4px solid black;
+  cursor: pointer;
+}

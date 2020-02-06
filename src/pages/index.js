@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Project from "../components/project"
 import About from "../components/about"
+import Contact from "../components/contact"
 import { graphql } from "gatsby"
 
 export const query = graphql`
@@ -33,6 +34,7 @@ export default ({ data }) => {
       <SEO />
       <Project home={doc.node} projects={projects} />
       <About />
+      <Contact />
     </Layout>
   )
 }

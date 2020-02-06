@@ -1,9 +1,10 @@
 import React from "react"
+import "./about.css"
 
 const about = () => {
   return (
     <div className="about-wrapper">
-      <h4>About</h4>
+      <h3>About</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod
         massa urna, vel condimentum nibh ultrices et. Curabitur congue eros nec

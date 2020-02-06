@@ -1,0 +1,18 @@
+.contact-wrapper {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.contact-wrapper a {
+  text-decoration: none;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 3px;
+  border-bottom: 2px solid black;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-wrapper a:hover {
+  background-color: black;
+  color: white;
+}

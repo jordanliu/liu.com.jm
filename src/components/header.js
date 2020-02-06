@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Info from "../components/info"
@@ -8,9 +7,9 @@ const Header = ({ siteTitle }) => (
   <header className="normalWidth">
     <div className="nav aos-init aos-animate">
       <div className="shortcuts">
-        <Link to="/#contact" className="link">
+        <a className="link" href="mailto:hi@jordanxliu.com">
           CONTACT
-        </Link>
+        </a>
       </div>
     </div>
     <Info />

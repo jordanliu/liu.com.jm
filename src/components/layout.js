@@ -23,11 +23,19 @@ const Layout = ({ children }) => {
         <main className="normalWidth">{children}</main>
       </div>
       <footer className="normalWidth">
-        Made with{" "}
+        Built with{" "}
         <span role="img" aria-label="heart">
           💖
         </span>{" "}
-        by Jordan Liu
+        by{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Github"
+          href="https://github.com/jordanliu"
+        >
+          Jordan Liu
+        </a>
       </footer>
     </>
   )
