@@ -26,7 +26,11 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+<<<<<<< HEAD
   const metaTitle = title || site.siteMetadata.title
+=======
+  console.log(metaDescription)
+>>>>>>> dev
 
   return (
     <Helmet
