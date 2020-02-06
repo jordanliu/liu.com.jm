@@ -85,19 +85,6 @@ img {
   font-weight: bold;
 }
 
-.link {
-  display: block;
-  color: #000;
-  text-decoration: none;
-}
-.link::after {
-  background: #000;
-  transition: width 0.3s;
-}
-.link:hover::after {
-  width: 100%;
-}
-
 .error {
   vertical-align: baseline;
 }
