@@ -78,16 +78,28 @@ img {
   color: black;
 }
 
-.cta {
-  display: inline-block;
-  padding: 1.5rem 3rem;
-  letter-spacing: 1px;
+.links {
+  text-align: right;
+  float: right;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  color: white;
-  background-color: red;
-  border-radius: 0.8rem;
+  font-weight: bold;
+}
+
+.link {
+  display: block;
+  color: #000;
   text-decoration: none;
+}
+.link::after {
+  background: #000;
+  transition: width 0.3s;
+}
+.link:hover::after {
+  width: 100%;
+}
+
+.error {
+  vertical-align: baseline;
 }
 
 @media screen and (max-width: 1068px) {
@@ -119,6 +131,7 @@ img {
   .card {
     flex-direction: column;
     max-width: 17rem;
+    padding-bottom: 1.5em;
   }
 
   .image {
@@ -126,9 +139,14 @@ img {
     max-width: 100%;
     height: 15rem;
     transform: translate(0, -3rem);
+    margin-bottom: -15px;
   }
   .projects-title {
     margin-bottom: 1.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin: 0rem 0 0.5rem;
   }
 }
 
