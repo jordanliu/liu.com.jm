@@ -8,17 +8,18 @@ import Contact from "../components/contact"
 import { graphql } from "gatsby"
 
 export const query = graphql`
-  {
-    prismic {
-      allProjects {
-        edges {
-          node {
-            _meta {
-              uid
-            }
-            project_title
-            project_description
-            project_preview_thumbnail
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            id
+            featured
+            title
+            description
+            image
+            github_url
+            live_url
           }
         }
       }
@@ -26,13 +27,11 @@ export const query = graphql`
   }
 `
 export default ({ data }) => {
-  const doc = data.prismic.allProjects.edges.slice(0, 1).pop()
-  const projects = data.prismic.allProjects.edges
-  if (!doc || !projects) return null
+  const projects = data.allMarkdownRemark.edges
   return (
     <Layout>
       <SEO />
-      <Project home={doc.node} projects={projects} />
+      <Project projects={projects} />
       <About />
       <Contact />
     </Layout>

@@ -6,26 +6,13 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-gtag",
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingIds: [`UA-61789534-2`],
-        gtagConfig: {
-          anonymize_ip: true,
-          cooke_expires: 0,
-        },
-        pluginConfig: {
-          head: true,
-        },
+        trackingId: "UA-61789534-2",
       },
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: "gatsby-source-prismic-graphql",
-      options: {
-        repositoryName: "jordanxliu", // (REQUIRED, replace with your own)
-      },
-    },
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {

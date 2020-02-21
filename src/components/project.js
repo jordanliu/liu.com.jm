@@ -1,6 +1,5 @@
 import React from "react"
 import "./card.css"
-import { RichText } from "prismic-reactjs"
 import { ArrowUpRight } from "react-feather"
 
 const project = ({ projects }) => {
@@ -11,7 +10,7 @@ const project = ({ projects }) => {
       <div className="cards">
         {projects.map(project => {
           return (
-            <div className="card" key={project.node._meta.uid}>
+            <div className="card" key={project.node.frontmatter.id}>
               <div className="image">
                 <img
                   alt="placeholder"
@@ -20,12 +19,8 @@ const project = ({ projects }) => {
               </div>
 
               <div className="info">
-                <h3 className="title">
-                  {RichText.asText(project.node.project_title)}
-                </h3>
-                <p className="text">
-                  {RichText.asText(project.node.project_description)}
-                </p>
+                <h3 className="title">{project.node.frontmatter.title}</h3>
+                <p className="text">{project.node.frontmatter.description}</p>
                 <div className="links">
                   <div className="github nav-anim">
                     <a
