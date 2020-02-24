@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Project from "../components/project"
@@ -37,9 +36,4 @@ export default ({ data }) => {
       <Contact />
     </Layout>
   )
-}
-
-Project.propTypes = {
-  home: PropTypes.object.isRequired,
-  projects: PropTypes.array.isRequired,
 }

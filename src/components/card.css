@@ -2,6 +2,12 @@ img {
   width: 100%;
 }
 
+.info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .tags {
   font-size: 16px;
   margin-bottom: 10px;

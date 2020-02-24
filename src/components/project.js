@@ -25,7 +25,7 @@ const project = ({ projects }) => {
                 <div className="links">
                   <div className="github nav-anim">
                     <a
-                      href="https://github.com"
+                      href={project.node.frontmatter.github_url}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Github"
@@ -36,7 +36,7 @@ const project = ({ projects }) => {
                   </div>
                   <div className="view-live nav-anim">
                     <a
-                      href="https://github.com"
+                      href={project.node.frontmatter.live_url}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="View Live"
