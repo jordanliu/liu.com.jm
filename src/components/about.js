@@ -6,17 +6,12 @@ const about = () => {
     <div className="about-wrapper">
       <h3>About</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod
-        massa urna, vel condimentum nibh ultrices et. Curabitur congue eros nec
-        mi aliquam commodo. Sed mollis laoreet nunc, sollicitudin consequat elit
-        fermentum vitae. Quisque nisi magna, blandit vel urna non, convallis
-        faucibus nibh. Nam luctus sodales nibh sit amet ultrices. Praesent
-        efficitur purus quis velit rutrum, at accumsan lacus mattis. Mauris quis
-        nunc eget erat elementum aliquam. Curabitur blandit id risus ac
-        malesuada. Fusce metus lectus, rutrum id velit blandit, placerat dictum
-        tellus. Aenean faucibus imperdiet tortor sit amet elementum. Nulla
-        facilisi. Cras at leo lectus. Suspendisse potenti. Morbi massa augue,
-        auctor ornare nibh in, placerat sollicitudin ligula.
+        I'm Jordan Liu, a Kingston based full-stack developer, who is a 3rd year
+        student majoring in Computer Science. My passion is designing and
+        developing beautiful projects. Apart from designing, I have interest in
+        Artificial Intelligence and Data Analytics. My current intention is to
+        create beautiful and functional products while learning to become a
+        better developer.
       </p>
     </div>
   )

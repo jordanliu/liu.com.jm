@@ -16,6 +16,7 @@ export const query = graphql`
             id
             featured
             title
+            tags
             description
             image
             github_url
