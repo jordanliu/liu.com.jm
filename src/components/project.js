@@ -12,14 +12,28 @@ const project = ({ projects }) => {
           return (
             <div className="card" key={project.node.frontmatter.id}>
               <div className="image">
-                <img
-                  alt="placeholder"
-                  src={project.node.frontmatter.image}
-                ></img>
+                <a
+                  href={project.node.frontmatter.live_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    alt="placeholder"
+                    src={project.node.frontmatter.image}
+                  ></img>
+                </a>
               </div>
 
               <div className="info">
-                <h3 className="title">{project.node.frontmatter.title}</h3>
+                <h3 className="title">
+                  <a
+                    href={project.node.frontmatter.live_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.node.frontmatter.title}
+                  </a>
+                </h3>
                 <h4 className="tags">{project.node.frontmatter.tags}</h4>
                 <p className="text">{project.node.frontmatter.description}</p>
                 <div className="links">
