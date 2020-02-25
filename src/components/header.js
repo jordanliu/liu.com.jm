@@ -1,6 +1,6 @@
 import React from "react"
 import Info from "./Info"
-import "./layout.css"
+import "./Layout.css"
 
 const Header = () => (
   <header className="normalWidth">

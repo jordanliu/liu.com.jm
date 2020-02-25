@@ -1,5 +1,5 @@
 import React from "react"
-import SocialMedia from "../components/socialMedia/SocialMedia"
+import SocialMedia from "./socialMedia/SocialMedia"
 
 const Info = () => {
   return (

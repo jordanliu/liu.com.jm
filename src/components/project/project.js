@@ -1,5 +1,5 @@
 import React from "react"
-import "./project.css"
+import "./Project.css"
 import Card from "../card/Card"
 
 const Project = ({ projects }) => {
