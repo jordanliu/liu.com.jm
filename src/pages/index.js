@@ -5,6 +5,8 @@ import Project from "../components/project/project"
 import About from "../components/about/about"
 import Contact from "../components/contact/contact"
 import { graphql } from "gatsby"
+import fadeInUp from "react-animations/lib/fade-in-up"
+import Radium, { StyleRoot } from "radium"
 
 export const query = graphql`
   query {
@@ -26,14 +28,24 @@ export const query = graphql`
     }
   }
 `
+
+const styles = {
+  fadeInUp: {
+    animation: "x 1s",
+    animationName: Radium.keyframes(fadeInUp, "fadeInUp"),
+  },
+}
+
 export default ({ data }) => {
   const projects = data.allMarkdownRemark.edges
   return (
-    <Layout>
-      <SEO />
-      <Project projects={projects} />
-      <About />
-      <Contact />
-    </Layout>
+    <StyleRoot style={styles.fadeInUp}>
+      <Layout>
+        <SEO />
+        <Project projects={projects} />
+        <About />
+        <Contact />
+      </Layout>
+    </StyleRoot>
   )
 }

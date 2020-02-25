@@ -1,48 +1,16 @@
 import React from "react"
-import { socialLinks } from "../data"
-import { Twitter, Linkedin, GitHub } from "react-feather"
+import SocialMedia from "../components/socialMedia/SocialMedia"
 
-const info = () => {
+const Info = () => {
   return (
     <div className="header-info">
       <h1>
         <a href="https://jordanxliu.com">Jordan Liu</a>
       </h1>
       <h4>Full Stack Developer</h4>
-      <div className="social-media">
-        {
-          <a
-            href={socialLinks.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            <Twitter />
-          </a>
-        }
-        {
-          <a
-            href={socialLinks.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <Linkedin />
-          </a>
-        }
-        {
-          <a
-            href={socialLinks.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Github"
-          >
-            <GitHub />
-          </a>
-        }
-      </div>
+      <SocialMedia />
     </div>
   )
 }
 
-export default info
+export default Info

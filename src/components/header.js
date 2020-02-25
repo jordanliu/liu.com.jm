@@ -1,27 +1,16 @@
-import PropTypes from "prop-types"
 import React from "react"
-import Info from "../components/info"
+import Info from "./Info"
 import "./layout.css"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className="normalWidth">
-    <div className="nav aos-init aos-animate">
-      <div className="shortcuts">
-        <a className="link" href="mailto:hi@jordanxliu.com">
-          CONTACT
-        </a>
-      </div>
-    </div>
+    <nav className="shortcuts nav aos-init aos-animate">
+      <a className="link" href="mailto:hi@jordanxliu.com">
+        CONTACT
+      </a>
+    </nav>
     <Info />
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
