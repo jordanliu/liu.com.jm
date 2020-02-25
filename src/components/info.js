@@ -5,9 +5,9 @@ import { Twitter, Linkedin, GitHub } from "react-feather"
 const info = () => {
   return (
     <div className="header-info">
-      <a href="https://jordanxliu.com">
-        <h1>Jordan Liu</h1>
-      </a>
+      <h1>
+        <a href="https://jordanxliu.com">Jordan Liu</a>
+      </h1>
       <h4>Full Stack Developer</h4>
       <div className="social-media">
         {

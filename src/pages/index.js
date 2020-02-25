@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Project from "../components/project"
-import About from "../components/about"
-import Contact from "../components/contact"
+import Project from "../components/project/project"
+import About from "../components/about/about"
+import Contact from "../components/contact/contact"
 import { graphql } from "gatsby"
 
 export const query = graphql`

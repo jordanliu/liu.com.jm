@@ -1,5 +1,5 @@
 import React from "react"
-import "./card.css"
+import "./project.css"
 import { ArrowUpRight } from "react-feather"
 
 const project = ({ projects }) => {
@@ -18,7 +18,7 @@ const project = ({ projects }) => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    alt="placeholder"
+                    alt="Project card preview"
                     src={project.node.frontmatter.image}
                   ></img>
                 </a>
