@@ -1,6 +1,6 @@
 import React from "react"
-import "./Project.css"
-import Card from "../card/Card"
+import "./project.css"
+import Card from "../card/card"
 
 const Project = ({ projects }) => {
   if (!projects) return null
