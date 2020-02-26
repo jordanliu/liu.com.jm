@@ -1,13 +1,6 @@
-.lets-talk {
-  text-align: center;
-  margin-top: 1.5em;
-}
-
-.underline {
-  border-bottom: 4px solid black;
-  cursor: pointer;
-}
-
 .about-wrapper {
-  margin-top: 2em;
+  margin-top: 20px;
+}
+.about-wrapper h3 {
+  margin-bottom: 5px;
 }

@@ -8,11 +8,10 @@
   font-weight: normal;
   cursor: pointer;
   padding: 3px;
-  border-bottom: 2px solid black;
-  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid black;
+  transition: 0.1s ease-in-out;
 }
 
 .contact-wrapper a:hover {
-  background-color: black;
-  color: white;
+  border-bottom: 0px solid black;
 }

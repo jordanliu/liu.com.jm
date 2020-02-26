@@ -79,7 +79,7 @@ p {
   width: 0;
   height: 2px;
   background: #000;
-  transition: width 0.3s;
+  transition: width 0.1s;
 }
 .link:hover::after {
   width: 100%;
@@ -98,8 +98,11 @@ footer {
 
 footer a {
   font-weight: bold;
+  transition: 0.1s ease-in-out;
+}
+
+footer a:hover {
   border-bottom: 2px solid black;
-  transition: 0.3s ease-in-out;
 }
 
 /* ----- RESPONSIVE HEADER ------ */
