@@ -1,22 +1,4 @@
-.img-content {
-  width: 100%;
-}
-
-.info {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.tags {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: normal;
-}
-
-.projects-title {
-  margin-bottom: 0.5rem;
-}
+/*-------- CARDS --------*/
 
 .cards {
   display: flex;
@@ -40,6 +22,10 @@
   margin-top: 1.5rem;
   margin-bottom: 3rem;
   transition: 0.3s ease-in-out;
+}
+
+.img-content {
+  width: 100%;
 }
 
 .image {
@@ -74,16 +60,28 @@
   border-radius: 0.8rem;
 }
 
+/*-------- TEXT --------*/
+
+.info {
+  width: 100%;
+  height: 100%;
+}
+
+.tags {
+  font-size: 16px;
+  color: rgb(128, 128, 128);
+  line-height: 1.6;
+}
+
 .title {
   font-size: 1.5rem;
-  margin: 0.5rem 0 0.5rem;
   text-transform: uppercase;
   color: black;
 }
 
 .text {
-  height: 100%;
-  margin-bottom: 3rem;
+  height: 2rem;
+  margin-bottom: 4rem;
   font-size: 1rem;
   color: black;
 }
@@ -95,6 +93,7 @@
   font-weight: bold;
 }
 
+/*-------- NAV ANIMATIONS --------*/
 .nav-anim {
   color: black;
   text-decoration: none;
@@ -102,6 +101,7 @@
   position: relative;
   transition: 0.3s ease-in-out;
 }
+
 .nav-anim:hover {
   opacity: 0.5;
 }
@@ -111,9 +111,10 @@
 }
 
 .view-more-cta {
+  text-align: center;
   display: inline-block;
   color: #000;
-  margin-top: -10px;
+  margin-top: -15px;
   text-decoration: none;
 }
 .view-more-cta::after {
@@ -167,12 +168,13 @@
     transform: translate(0, -3rem);
     margin-bottom: -15px;
   }
+
   .projects-title {
     margin-bottom: 1.5rem;
   }
+
   .title {
     font-size: 1.5rem;
-    margin: 0rem 0 0.5rem;
   }
 }
 

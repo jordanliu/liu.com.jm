@@ -1,19 +1,19 @@
 import React from "react"
-import "./About.css"
+import "./about.css"
 
 const About = () => {
   return (
-    <div className="about-wrapper">
+    <section className="about-wrapper">
       <h3>About</h3>
       <p>
         I'm Jordan Liu, a Kingston based full-stack developer, who is a 3rd year
         student majoring in Computer Science. My passion is designing and
-        developing beautiful projects. Apart from designing, I have interest in
-        Artificial Intelligence and Data Analytics. My current intention is to
-        create beautiful and functional products while learning to become a
+        developing beautiful projects that solves real world problems. I'm
+        currently learning more about front-end development and data analytics.
+        My current goal is to keep learning with the intention of becoming a
         better developer.
       </p>
-    </div>
+    </section>
   )
 }
 

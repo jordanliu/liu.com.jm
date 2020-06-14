@@ -8,11 +8,10 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  color: #454545;
   font-size: 18px;
 }
 
@@ -22,69 +21,32 @@ a {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
   font-size: 64px;
-  color: #000000;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 50px;
-  color: #000000;
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 40px;
-  color: #000000;
   line-height: 1.2;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
   line-height: 1.6;
 }
 
-li {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
-  margin-bottom: 9px;
-}
-
-ul {
-  margin-left: 18px;
-  margin-top: 18px;
-}
-
-figcaption {
-  margin-top: 14px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #637381;
-}
-
-mark {
-  background-color: #d4f0ff;
-  color: black;
-}
-
-@media (max-width: 900px) {
-  .shortcuts {
-    display: none;
-  }
-}
 .normalWidth {
   width: 90%;
   margin: auto;
   max-width: 950px;
 }
 
-.projects-wrapper {
-  padding-top: 5em;
-}
+/*-------- SOCIAL MEDIA --------*/
 
 .social-media {
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .social-media svg {
@@ -95,35 +57,15 @@ mark {
   fill: black;
 }
 
-/*-------- BUTTON --------*/
-.projects-button {
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  margin-top: 20px;
-  height: 50px;
-  width: 200px;
-  color: white;
-  background-color: black;
-}
-
 /*-------- NAV --------*/
 .nav {
   margin-top: 50px;
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
 }
 
 .shortcuts {
   font-size: 18px;
-  flex: 1;
   text-align: right;
-}
-
-.shortcuts a {
-  margin-left: 25px;
-  text-decoration: none;
 }
 
 .link {
@@ -137,53 +79,38 @@ mark {
   width: 0;
   height: 2px;
   background: #000;
-  transition: width 0.3s;
+  transition: width 0.1s;
 }
 .link:hover::after {
   width: 100%;
 }
 
-.home a {
-  flex: 1;
-  text-decoration: none;
+/* ----- HEADER ------ */
+.header-info {
+  margin-bottom: 3rem;
 }
 
-/*-------- CONTAINERS --------*/
-
-.work-container {
-  max-width: 980px;
-  margin: 5px auto 0 auto;
-}
-
-.work {
-  padding: 20px;
-  box-sizing: border-box;
-  flex-basis: 50%;
-}
-
-@media (min-width: 900px) {
-  .work-container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 500px) {
-  .work-container {
-    max-width: 950px;
-  }
-}
-
-/* ----- ABOUT ------ */
-.about-wrapper {
-  margin-top: 2em;
-}
-
+/* ----- FOOTER ------ */
 footer {
   text-align: center;
   padding: 80px 0px 25px;
 }
 
-.header-info {
-  margin-bottom: 3rem;
+footer a {
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+}
+
+footer a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* ----- RESPONSIVE HEADER ------ */
+@media (max-width: 900px) {
+  .shortcuts {
+    display: none;
+  }
+  .header-info {
+    margin-top: 3rem;
+  }
 }

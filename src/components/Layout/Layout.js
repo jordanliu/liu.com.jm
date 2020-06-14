@@ -19,23 +19,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
-        <main className="normalWidth">{children}</main>
-      </div>
+      <main className="normalWidth">{children}</main>
       <footer className="normalWidth">
-        Built with{" "}
-        <span role="img" aria-label="heart">
-          💖
-        </span>{" "}
-        by{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Github"
-          href="https://github.com/jordanliu"
-        >
-          Jordan Liu
-        </a>
+        <a href="https://github.com/jordanliu">GitHub</a> |{" "}
+        <a href="https://twitter.com/jordanxliu">Twitter</a>
       </footer>
     </>
   )
