@@ -1,4 +1,4 @@
-img {
+.img-content {
   width: 100%;
 }
 
@@ -42,10 +42,6 @@ img {
   transition: 0.3s ease-in-out;
 }
 
-.card:hover {
-  transform: translateY(-9px) scale(1.005) translateZ(0);
-}
-
 .image {
   min-width: 15rem;
   max-width: 15rem;
@@ -54,7 +50,7 @@ img {
   position: relative;
 }
 
-.image img {
+.image .img-content {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -62,7 +58,7 @@ img {
   border-radius: 0.8rem;
 }
 
-.image img::before {
+.image .img-content::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -112,6 +108,24 @@ img {
 
 .error {
   vertical-align: baseline;
+}
+
+.view-more-cta {
+  display: inline-block;
+  color: #000;
+  margin-top: -10px;
+  text-decoration: none;
+}
+.view-more-cta::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+.view-more-cta:hover::after {
+  width: 100%;
 }
 
 @media screen and (max-width: 1068px) {

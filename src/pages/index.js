@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
-import Project from "../components/project"
-import About from "../components/about"
-import Contact from "../components/contact"
+import Project from "../components/Project/Project"
+import About from "../components/About/About"
+import Contact from "../components/Contact/Contact"
 import { graphql } from "gatsby"
 
 export const query = graphql`
-  query {
+  {
     allMarkdownRemark {
       edges {
         node {
@@ -17,7 +17,17 @@ export const query = graphql`
             title
             tags
             description
-            image
+            image {
+              childImageSharp {
+                fluid {
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
+                }
+              }
+            }
             github_url
             live_url
           }

@@ -9,7 +9,7 @@
     "css-loader": "^3.4.2",
     "dotenv": "^8.2.0",
     "gatsby": "^2.18.12",
-    "gatsby-cli": "^2.8.28",
+    "gatsby-cli": "^2.12.45",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-catch-links": "^2.1.24",
     "gatsby-plugin-google-analytics": "^2.1.35",

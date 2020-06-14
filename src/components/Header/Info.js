@@ -1,8 +1,8 @@
 import React from "react"
-import { socialLinks } from "../data"
+import { socialLinks } from "../../data"
 import { Twitter, Linkedin, GitHub } from "react-feather"
 
-const info = () => {
+const Info = () => {
   return (
     <div className="header-info">
       <a href="https://jordanxliu.com">
@@ -13,7 +13,6 @@ const info = () => {
         {
           <a
             href={socialLinks.twitter}
-            target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
           >
@@ -23,7 +22,6 @@ const info = () => {
         {
           <a
             href={socialLinks.linkedin}
-            target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
@@ -33,7 +31,6 @@ const info = () => {
         {
           <a
             href={socialLinks.github}
-            target="_blank"
             rel="noopener noreferrer"
             aria-label="Github"
           >
@@ -45,4 +42,4 @@ const info = () => {
   )
 }
 
-export default info
+export default Info

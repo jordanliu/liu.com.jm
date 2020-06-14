@@ -1,7 +1,7 @@
 import React from "react"
-import "./contact.css"
+import "./Contact.css"
 
-function contact(props) {
+function Contact(props) {
   return (
     <div className="contact-wrapper">
       <h3>
@@ -14,4 +14,4 @@ function contact(props) {
   )
 }
 
-export default contact
+export default Contact

@@ -1,8 +1,9 @@
 import React from "react"
-import "./card.css"
+import "./Project.css"
 import { ArrowUpRight } from "react-feather"
+import Img from "gatsby-image"
 
-const project = ({ projects }) => {
+const Project = ({ projects }) => {
   if (!projects) return null
   return (
     <div>
@@ -12,10 +13,11 @@ const project = ({ projects }) => {
           return (
             <div className="card" key={project.node.frontmatter.id}>
               <div className="image">
-                <img
+                <Img
+                  className="img-content"
                   alt="placeholder"
-                  src={project.node.frontmatter.image}
-                ></img>
+                  fluid={project.node.frontmatter.image.childImageSharp.fluid}
+                />
               </div>
 
               <div className="info">
@@ -26,7 +28,6 @@ const project = ({ projects }) => {
                   <div className="github nav-anim">
                     <a
                       href={project.node.frontmatter.github_url}
-                      target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Github"
                     >
@@ -37,7 +38,6 @@ const project = ({ projects }) => {
                   <div className="view-live nav-anim">
                     <a
                       href={project.node.frontmatter.live_url}
-                      target="_blank"
                       rel="noopener noreferrer"
                       aria-label="View Live"
                     >
@@ -50,9 +50,12 @@ const project = ({ projects }) => {
             </div>
           )
         })}
+        <a href="https://github.com/jordanliu" className="view-more-cta">
+          <h4>View more on GitHub</h4>
+        </a>
       </div>
     </div>
   )
 }
 
-export default project
+export default Project

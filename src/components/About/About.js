@@ -1,7 +1,7 @@
 import React from "react"
-import "./about.css"
+import "./About.css"
 
-const about = () => {
+const About = () => {
   return (
     <div className="about-wrapper">
       <h3>About</h3>
@@ -17,4 +17,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

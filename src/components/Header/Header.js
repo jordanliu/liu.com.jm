@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Info from "../components/info"
-import "./layout.css"
+import Info from "./Info.js"
+import "../Layout/Layout.css"
 
 const Header = ({ siteTitle }) => (
   <header className="normalWidth">
