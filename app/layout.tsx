@@ -16,7 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jordan Liu",
     description: "just building stuff",
-    images: ["/og.png"],
+    images: [
+      {
+        url: "https://liu.com.jm/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Jordan Liu",
+      },
+    ],
     type: "website",
     siteName: "Jordan Liu",
     url: "https://liu.com.jm",
@@ -25,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jordan Liu",
     description: "just building stuff",
-    images: ["/og.png"],
+    images: ["https://liu.com.jm/og.png"],
   },
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
