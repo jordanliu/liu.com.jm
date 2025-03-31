@@ -42,7 +42,7 @@ export default function Home() {
           />
         )}
       </AnimatePresence>
-      <main className="flex min-h-screen flex-col items-center justify-center px-4 py-6">
+      <main className="flex min-h-[100dvh] flex-col items-center justify-center px-4">
         <div className="w-full max-w-md mx-auto space-y-3">
           {/* Header Card */}
           <div className="card">
