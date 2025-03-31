@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: "just building stuff",
     images: ["/og.png"],
     type: "website",
+    siteName: "Jordan Liu",
   },
   twitter: {
     card: "summary_large_image",
