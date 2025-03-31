@@ -16,13 +16,6 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Project Structure
-
-- `/app` - Next.js app router pages and layouts
-- `/components` - Reusable React components
-- `/lib` - Utility functions and shared logic
-- `/public` - Static assets
-
 ## Development
 
 - `pnpm dev` - Start the development server with Turbopack
