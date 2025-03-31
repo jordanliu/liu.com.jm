@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jordan Liu",
     description: "just building stuff",
-    images: [{ url: "/og.png" }],
+    images: ["/og.png"],
   },
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
